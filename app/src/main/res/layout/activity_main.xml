@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView" />
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:padding="5dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray"
+            android:id="@+id/view"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/convert"
+            android:layout_alignStart="@+id/convert" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="top"
+            android:hint="Enter text to encode"
+
+            android:ems="10"
+            android:background="@drawable/edittext"
+            android:padding="10dp"
+            android:id="@+id/write"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_above="@+id/convert" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encode"
+            android:id="@+id/convert"
+            android:layout_above="@+id/view"
+            android:layout_alignLeft="@+id/write"
+            android:layout_alignStart="@+id/write"
+            android:layout_marginBottom="5dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy"
+            android:id="@+id/copy1"
+            android:layout_alignBottom="@+id/convert"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="decode"
+            android:id="@+id/decodebtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <EditText
+            android:id="@+id/decode"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:gravity="top"
+            android:hint="Enter text to decode"
+            android:ems="10"
+            android:background="@drawable/edittext"
+            android:padding="10dp"
+            android:layout_alignTop="@+id/view"
+            android:layout_alignRight="@+id/copy1"
+            android:layout_alignEnd="@+id/copy1"
+            android:layout_marginTop="10dp"
+            android:layout_above="@+id/decodebtn" />
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="copy"
+            android:id="@+id/copy"
+            android:layout_alignBottom="@+id/decodebtn"
+            android:layout_alignRight="@+id/copy1"
+            android:layout_alignEnd="@+id/copy1" />
+
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

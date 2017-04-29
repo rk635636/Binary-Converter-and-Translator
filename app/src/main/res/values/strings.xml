@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Binary Converter and Translator</string>
+    <string name="country_prompt">Choose a country</string>
+
+    <string-array name="country_arrays">
+        <item>Binary</item>
+        <item>Decimal</item>
+        <item>Hexadecimal</item>
+        <item>Octal</item>
+    </string-array>
+
+    <!-- AdMob ad unit IDs -->
+    <string name="banner_home_footer">ca-app-pub-8113161821706505/6190504072</string>
+    <string name="interstitial_full_screen">ca-app-pub-8113161821706505/9143970470</string>
+
+</resources>
